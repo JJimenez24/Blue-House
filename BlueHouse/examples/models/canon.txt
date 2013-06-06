@@ -1,0 +1,462 @@
+var divisor = 0.05;
+var yAxis = new CANNON.Vec3(0,1,0);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(355.195*divisor, 100*divisor, 126.730*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-258.931*divisor, 50*divisor, 143.841*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(107.471*divisor, 100*divisor, 126.730*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-490.264*divisor, 50*divisor, 110.326*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(30.008*divisor, 100*divisor, 524.790*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-559.004*divisor, 50*divisor, 133.069*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(391.309*divisor, 100*divisor, 160.830*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-769.663*divisor, 50*divisor, 315.049*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(209.155*divisor, 100*divisor, 317.588*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-1069.896*divisor, 50*divisor, 91.266*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(99.610*divisor, 100*divisor, 161.678*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-587.183*divisor, 50*divisor, -254.737*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(152.282*divisor, 100*divisor, 105.730*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-713.130*divisor, 50*divisor, -259.452*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(328.329*divisor, 100*divisor, 160.830*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-801.153*divisor, 50*divisor, -126.171*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(202.129*divisor, 100*divisor, 89.459*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-890.336*divisor, 50*divisor, -251.316*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(26.082*divisor, 100*divisor, 139.058*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-978.359*divisor, 50*divisor, 137.058*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(2103.716*divisor, 100*divisor, 228.517*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-2205.183*divisor, 50*divisor, -181.787*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(200.857*divisor, 100*divisor, 313.984*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3357.470*divisor, 50*divisor, -234.825*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(184.405*divisor, 100*divisor, 421.024*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3500.465*divisor, 50*divisor, -602.330*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(141.821*divisor, 100*divisor, 10.118*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3186.130*divisor, 50*divisor, -361.272*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(13.164*divisor, 100*divisor, 180.229*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3123.126*divisor, 50*divisor, -456.446*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(87.313*divisor, 100*divisor, 106.334*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3173.741*divisor, 50*divisor, -456.581*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(8.478*divisor, 100*divisor, 64.812*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3261.280*divisor, 50*divisor, -463.782*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(142.660*divisor, 100*divisor, 29.935*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3336.932*divisor, 50*divisor, -476.371*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(106.334*divisor, 100*divisor, 43.812*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3169.711*divisor, 50*divisor, -568.467*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(8.478*divisor, 100*divisor, 65.117*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3261.280*divisor, 50*divisor, -566.839*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(142.660*divisor, 100*divisor, 29.920*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3336.932*divisor, 50*divisor, -580.302*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(13.164*divisor, 100*divisor, 116.585*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3123.126*divisor, 50*divisor, -684.482*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(20.410*divisor, 100*divisor, 104.371*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3255.397*divisor, 50*divisor, -690.589*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(142.660*divisor, 100*divisor, 16.895*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3336.932*divisor, 50*divisor, -682.077*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(292.306*divisor, 100*divisor, 684.794*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3262.109*divisor, 50*divisor, -1085.172*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(401.118*divisor, 100*divisor, 44.693*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3207.703*divisor, 50*divisor, -1449.916*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(49.838*divisor, 100*divisor, 1074.075*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-3032.063*divisor, 50*divisor, -890.531*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(2066.088*divisor, 100*divisor, 95.426*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-1974.125*divisor, 50*divisor, -401.206*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(6.902*divisor, 100*divisor, 19.092*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-1337.163*divisor, 50*divisor, -343.947*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(238.115*divisor, 100*divisor, 143.829*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-822.023*divisor, 50*divisor, -450.555*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(436.160*divisor, 100*divisor, 46.300*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-855.213*divisor, 50*divisor, -692.958*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, -Math.PI/4);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(222.795*divisor, 100*divisor, 54.730*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-793.197*divisor, 50*divisor, -702.382*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, -Math.PI/4);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(143.829*divisor, 100*divisor, 182.588*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-877.647*divisor, 50*divisor, -877.242*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, -Math.PI/4);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(222.795*divisor, 100*divisor, 54.730*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-702.749*divisor, 50*divisor, -792.752*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, -Math.PI/4);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(436.066*divisor, 100*divisor, 49.867*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-692.141*divisor, 50*divisor, -856.106*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, -Math.PI/4);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(105.183*divisor, 37*divisor, 30.678*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-561.616*divisor, 18.5*divisor, -564.684*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, Math.PI/4);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(143.750*divisor, 48*divisor, 52.591*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-489.576*divisor, 24*divisor, -500.312*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, Math.PI/4);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(21.856*divisor, 100*divisor, 21.856*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-597*divisor, 50*divisor, -397*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(21.856*divisor, 100*divisor, 21.856*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-492*divisor, 50*divisor, -338*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(32.785*divisor, 100*divisor, 32.785*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-289*divisor, 50*divisor, -291*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(21.856*divisor, 100*divisor, 21.856*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-338*divisor, 50*divisor, -493*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(21.856*divisor, 100*divisor, 21.856*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-395*divisor, 50*divisor, -601*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(143.829*divisor, 100*divisor, 252.848*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-448.329*divisor, 50*divisor, -824.656*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(94.370*divisor, 100*divisor, 2059.021*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-400.602*divisor, 50*divisor, -1980.591*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(20.416*divisor, 100*divisor, 6.902*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-343.209*divisor, 50*divisor, -1338.776*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(2061.977*divisor, 100*divisor, 49.817*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-1384.447*divisor, 50*divisor, -3035.011*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(45.408*divisor, 100*divisor, 157.083*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-2438.140*divisor, 50*divisor, -3089.735*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(2122.002*divisor, 100*divisor, 49.838*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-1354.434*divisor, 50*divisor, -3143*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(295.660*divisor, 100*divisor, 1559.131*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-145.456*divisor, 50*divisor, -2503.394*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(13.164*divisor, 100*divisor, 116.934*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-286.774*divisor, 50*divisor, -1665.362*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(20.216*divisor, 100*divisor, 99.328*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-155.970*divisor, 50*divisor, -1673.256*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(148.235*divisor, 100*divisor, 16.895*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-71.744*divisor, 50*divisor, -1659.925*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(112.030*divisor, 100*divisor, 386.340*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(58.389*divisor, 50*divisor, -1541.815*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(99.730*divisor, 100*divisor, 42.123*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-245.210*divisor, 50*divisor, -1552.526*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(6.903*divisor, 100*divisor, 64.464*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-149.314*divisor, 50*divisor, -1551.809*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(148.235*divisor, 100*divisor, 30.264*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-71.744*divisor, 50*divisor, -1564.551*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(13.836*divisor, 100*divisor, 180.777*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-288.157*divisor, 50*divisor, -1441.075*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(86.388*divisor, 100*divisor, 106.334*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-238.044*divisor, 50*divisor, -1440.935*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(6.903*divisor, 100*divisor, 63.935*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-149.313*divisor, 50*divisor, -1448.038*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(148.235*divisor, 100*divisor, 30.734*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-71.744*divisor, 50*divisor, -1462.079*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(155.138*divisor, 100*divisor, 25.757*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-75.196*divisor, 50*divisor, -1363.565*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(297.449*divisor, 100*divisor, 197.995*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-146.351*divisor, 50*divisor, -1251.689*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(78.641*divisor, 100*divisor, 236.206*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-28.855*divisor, 50*divisor, -1034.588*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(222.133*divisor, 100*divisor, 76.952*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-179.243*divisor, 50*divisor, -954.960*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(249.644*divisor, 100*divisor, 36.363*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-153.852*divisor, 50*divisor, -898.303*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(201.386*divisor, 100*divisor, 58.241*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-171.838*divisor, 50*divisor, -851.001*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(143.829*divisor, 100*divisor, 123.648*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-238.810*divisor, 50*divisor, -760.056*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(159.707*divisor, 100*divisor, 99.661*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-246.749*divisor, 50*divisor, -648.401*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(148.499*divisor, 100*divisor, 59.616*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-265.124*divisor, 50*divisor, -568.762*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(248.446*divisor, 100*divisor, 82.738*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(134.689*divisor, 50*divisor, -959.785*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(188.680*divisor, 100*divisor, 74.737*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(108.175*divisor, 50*divisor, -829.480*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(32.729*divisor, 100*divisor, 330.724*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(259.201*divisor, 50*divisor, -751.206*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(17*divisor, 100*divisor, 24.267*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-83.962*divisor, 50*divisor, -772.417*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, -43*Math.PI/180);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(25.398*divisor, 100*divisor, 9.472*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(26.606*divisor, 50*divisor, -748.723*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, -43*Math.PI/180);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(87.369*divisor, 100*divisor, 26.365*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-5.947*divisor, 50*divisor, -754.579*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, -43*Math.PI/180);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(108.214*divisor, 100*divisor, 71.000*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-43.986*divisor, 50*divisor, -723.485*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, -43*Math.PI/180);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(162.432*divisor, 100*divisor, 51.816*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(54.234*divisor, 50*divisor, -630.391*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, -43*Math.PI/180);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(45.849*divisor, 100*divisor, 48.023*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(139.585*divisor, 50*divisor, -619.057*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, -43*Math.PI/180);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(21.856*divisor, 100*divisor, 21.856*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-101*divisor, 50*divisor, -682*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(165.093*divisor, 52*divisor, 46.364*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-37.085*divisor, 26*divisor, -604.613*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, -2*Math.PI/9);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(29.818*divisor, 100*divisor, 74.951*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(75.501*divisor, 50*divisor, -518.525*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(136.400*divisor, 100*divisor, 29.843*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(191.942*divisor, 50*divisor, -570.923*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(168.501*divisor, 100*divisor, 102.833*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(174.661*divisor, 50*divisor, -504.584*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(147.772*divisor, 100*divisor, 346.262*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(178.081*divisor, 50*divisor, -280.036*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(263.529*divisor, 100*divisor, 128.227*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(56.294*divisor, 50*divisor, 31.666*divisor);
+boxBody.quaternion.setFromAxisAngle(yAxis, Math.PI/4);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(61.089*divisor, 100*divisor, 13.836*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-1122.780*divisor, 50*divisor, -286.023*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(60.834*divisor, 100*divisor, 13.836*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-1021.818*divisor, 50*divisor, -286.022*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(13.836*divisor, 100*divisor, 58.897*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-284.589*divisor, 50*divisor, -1123.242*divisor);
+world.add(boxBody);
+
+var boxShape = new CANNON.Box(new CANNON.Vec3(13.836*divisor, 100*divisor, 60.356*divisor));
+var boxBody = new CANNON.RigidBody(0, boxShape);
+boxBody.position.set(-284.589*divisor, 50*divisor, -1023.615*divisor);
+world.add(boxBody);

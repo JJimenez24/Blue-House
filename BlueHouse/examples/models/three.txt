@@ -1,0 +1,461 @@
+var material = new THREE.MeshLambertMaterial( { color: 0x008542 } );
+
+var boxShape = new THREE.CubeGeometry(355.195, 100, 126.730);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-258.931, 50, 143.841);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(107.471, 100, 126.730);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-490.264, 50, 110.326);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(30.008, 100, 524.790);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-559.004, 50, 133.069);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(391.309, 100, 160.830);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-769.663, 50, 315.049);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(209.155, 100, 317.588);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-1069.896, 50, 91.266);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(99.610, 100, 161.678);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-587.183, 50, -254.737);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(152.282, 100, 105.730);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-713.130, 50, -259.452);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(328.329, 100, 160.830);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-801.153, 50, -126.171);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(202.129, 100, 89.459);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-890.336, 50, -251.316);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(26.082, 100, 139.058);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-978.359, 50, 137.058);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(2103.716, 100, 228.517);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-2205.183, 50, -181.787);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(200.857, 100, 313.984);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3357.470, 50, -234.825);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(184.405, 100, 421.024);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3500.465, 50, -602.330);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(141.821, 100, 10.118);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3186.130, 50, -361.272);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(13.164, 100, 180.229);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3123.126, 50, -456.446);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(87.313, 100, 106.334);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3173.741, 50, -456.581);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(8.478, 100, 64.812);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3261.280, 50, -463.782);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(142.660, 100, 29.935);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3336.932, 50, -476.371);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(106.334, 100, 43.812);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3169.711, 50, -568.467);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(8.478, 100, 65.117);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3261.280, 50, -566.839);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(142.660, 100, 29.920);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3336.932, 50, -580.302);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(13.164, 100, 116.585);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3123.126, 50, -684.482);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(20.410, 100, 104.371);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3255.397, 50, -690.589);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(142.660, 100, 16.895);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3336.932, 50, -682.077);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(292.306, 100, 684.794);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3262.109, 50, -1085.172);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(401.118, 100, 44.693);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3207.703, 50, -1449.916);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(49.838, 100, 1074.075);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-3032.063, 50, -890.531);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(2066.088, 100, 95.426);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-1974.125, 50, -401.206);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(6.902, 100, 19.092);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-1337.163, 50, -343.947);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(238.115, 100, 143.829);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-822.023, 50, -450.555);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(436.160, 100, 46.300);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-855.213, 50, -692.958);
+boxBody.rotation.y = -Math.PI/4;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(222.795, 100, 54.730);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-793.197, 50, -702.382);
+boxBody.rotation.y = -Math.PI/4;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(143.829, 100, 182.588);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-877.647, 50, -877.242);
+boxBody.rotation.y = -Math.PI/4;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(222.795, 100, 54.730);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-702.749, 50, -792.752);
+boxBody.rotation.y = -Math.PI/4;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(436.066, 100, 49.867);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-692.141, 50, -856.106);
+boxBody.rotation.y = -Math.PI/4;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(105.183, 37, 30.678);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-561.616, 18.5, -564.684);
+boxBody.rotation.y = Math.PI/4;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(143.750, 48, 52.591);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-489.576, 24, -500.312);
+boxBody.rotation.y = Math.PI/4;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(21.856, 100, 21.856);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-597, 50, -397);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(21.856, 100, 21.856);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-492, 50, -338);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(32.785, 100, 32.785);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-289, 50, -291);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(21.856, 100, 21.856);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-338, 50, -493);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(21.856, 100, 21.856);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-395, 50, -601);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(143.829, 100, 252.848);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-448.329, 50, -824.656);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(94.370, 100, 2059.021);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-400.602, 50, -1980.591);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(20.416, 100, 6.902);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-343.209, 50, -1338.776);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(2061.977, 100, 49.817);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-1384.447, 50, -3035.011);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(45.408, 100, 157.083);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-2438.140, 50, -3089.735);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(2122.002, 100, 49.838);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-1354.434, 50, -3143);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(295.660, 100, 1559.131);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-145.456, 50, -2503.394);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(13.164, 100, 116.934);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-286.774, 50, -1665.362);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(20.216, 100, 99.328);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-155.970, 50, -1673.256);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(148.235, 100, 16.895);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-71.744, 50, -1659.925);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(112.030, 100, 386.340);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(58.389, 50, -1541.815);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(99.730, 100, 42.123);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-245.210, 50, -1552.526);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(6.903, 100, 64.464);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-149.314, 50, -1551.809);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(148.235, 100, 30.264);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-71.744, 50, -1564.551);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(13.836, 100, 180.777);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-288.157, 50, -1441.075);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(86.388, 100, 106.334);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-238.044, 50, -1440.935);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(6.903, 100, 63.935);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-149.313, 50, -1448.038);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(148.235, 100, 30.734);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-71.744, 50, -1462.079);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(155.138, 100, 25.757);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-75.196, 50, -1363.565);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(297.449, 100, 197.995);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-146.351, 50, -1251.689);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(78.641, 100, 236.206);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-28.855, 50, -1034.588);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(222.133, 100, 76.952);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-179.243, 50, -954.960);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(249.644, 100, 36.363);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-153.852, 50, -898.303);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(201.386, 100, 58.241);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-171.838, 50, -851.001);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(143.829, 100, 123.648);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-238.810, 50, -760.056);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(159.707, 100, 99.661);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-246.749, 50, -648.401);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(148.499, 100, 59.616);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-265.124, 50, -568.762);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(248.446, 100, 82.738);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(134.689, 50, -959.785);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(188.680, 100, 74.737);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(108.175, 50, -829.480);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(32.729, 100, 330.724);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(259.201, 50, -751.206);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(17, 100, 24.267);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-83.962, 50, -772.417);
+boxBody.rotation.y = -43*Math.PI/180;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(25.398, 100, 9.472);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(26.606, 50, -748.723);
+boxBody.rotation.y = -43*Math.PI/180;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(87.369, 100, 26.365);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-5.947, 50, -754.579);
+boxBody.rotation.y = -43*Math.PI/180;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(108.214, 100, 71.000);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-43.986, 50, -723.485);
+boxBody.rotation.y = -43*Math.PI/180;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(162.432, 100, 51.816);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(54.234, 50, -630.391);
+boxBody.rotation.y = -43*Math.PI/180;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(45.849, 100, 48.023);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(139.585, 50, -619.057);
+boxBody.rotation.y = -43*Math.PI/180;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(21.856, 100, 21.856);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-101, 50, -682);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(165.093, 52, 46.364);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-37.085, 26, -604.613);
+boxBody.rotation.y = -2*Math.PI/9;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(29.818, 100, 74.951);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(75.501, 50, -518.525);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(136.400, 100, 29.843);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(191.942, 50, -570.923);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(168.501, 100, 102.833);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(174.661, 50, -504.584);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(147.772, 100, 346.262);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(178.081, 50, -280.036);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(263.529, 100, 128.227);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(56.294, 50, 31.666);
+boxBody.rotation.y = Math.PI/4;
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(61.089, 100, 13.836);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-1122.780, 50, -286.023);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(60.834, 100, 13.836);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-1021.818, 50, -286.022);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(13.836, 100, 58.897);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-284.589, 50, -1123.242);
+scene.add(boxBody);
+
+var boxShape = new THREE.CubeGeometry(13.836, 100, 60.356);
+var boxBody = new THREE.Mesh(boxShape, material);
+boxBody.position.set(-284.589, 50, -1023.615);
+scene.add(boxBody);

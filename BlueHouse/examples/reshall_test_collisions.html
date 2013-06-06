@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Res Hall Test - Collisions - Cannon.js & Three.js</title>
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+
+            body {
+                background-color: #ffffff;
+                margin: 0;
+                overflow: hidden;
+                font-family: arial;
+            }
+
+            #blocker {
+
+                position: absolute;
+
+                width: 100%;
+                height: 100%;
+
+                background-color: rgba(0,0,0,0.5);
+
+            }
+
+            #instructions {
+
+                width: 100%;
+                height: 100%;
+
+                display: -webkit-box;
+                display: -moz-box;
+                display: box;
+
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                box-orient: horizontal;
+
+                -webkit-box-pack: center;
+                -moz-box-pack: center;
+                box-pack: center;
+
+                -webkit-box-align: center;
+                -moz-box-align: center;
+                box-align: center;
+
+                color: #ffffff;
+                text-align: center;
+
+                cursor: pointer;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <script src="../libs/Three.js"></script>
+        <script src="../build/cannon.js"></script>
+        <script src="../libs/JSONLoader.js"></script>
+        <script src="js/PointerLockControls.js"></script>
+
+        <div id="blocker">
+
+            <div id="instructions">
+                <span style="font-size:40px">Click to play</span>
+                <br />
+                (W,A,S,D = Move, SPACE = Jump, MOUSE = Look, CLICK = Shoot)
+            </div>
+
+        </div>
+
+        <script>
+
+            var sphereShape, sphereBody, world, physicsMaterial, boxBody, boxMesh;
+
+            var camera, scene, renderer;
+            var geometry, material, mesh;
+            var controls,time = Date.now();
+
+            var blocker = document.getElementById( 'blocker' );
+            var instructions = document.getElementById( 'instructions' );
+
+            var havePointerLock = 'pointerLockElement' in document || 'mozPointerLockElement' in document || 'webkitPointerLockElement' in document;
+
+            if ( havePointerLock ) {
+
+                var element = document.body;
+
+                var pointerlockchange = function ( event ) {
+
+                    if ( document.pointerLockElement === element || document.mozPointerLockElement === element || document.webkitPointerLockElement === element ) {
+
+                        controls.enabled = true;
+
+                        blocker.style.display = 'none';
+
+                    } else {
+
+                        controls.enabled = false;
+
+                        blocker.style.display = '-webkit-box';
+                        blocker.style.display = '-moz-box';
+                        blocker.style.display = 'box';
+
+                        instructions.style.display = '';
+
+                    }
+
+                }
+
+                var pointerlockerror = function ( event ) {
+                    instructions.style.display = '';
+                }
+
+                // Hook pointer lock state change events
+                document.addEventListener( 'pointerlockchange', pointerlockchange, false );
+                document.addEventListener( 'mozpointerlockchange', pointerlockchange, false );
+                document.addEventListener( 'webkitpointerlockchange', pointerlockchange, false );
+
+                document.addEventListener( 'pointerlockerror', pointerlockerror, false );
+                document.addEventListener( 'mozpointerlockerror', pointerlockerror, false );
+                document.addEventListener( 'webkitpointerlockerror', pointerlockerror, false );
+
+                instructions.addEventListener( 'click', function ( event ) {
+                    instructions.style.display = 'none';
+
+                    // Ask the browser to lock the pointer
+                    element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
+
+                    if ( /Firefox/i.test( navigator.userAgent ) ) {
+
+                        var fullscreenchange = function ( event ) {
+
+                            if ( document.fullscreenElement === element || document.mozFullscreenElement === element || document.mozFullScreenElement === element ) {
+
+                                document.removeEventListener( 'fullscreenchange', fullscreenchange );
+                                document.removeEventListener( 'mozfullscreenchange', fullscreenchange );
+
+                                element.requestPointerLock();
+                            }
+
+                        }
+
+                        document.addEventListener( 'fullscreenchange', fullscreenchange, false );
+                        document.addEventListener( 'mozfullscreenchange', fullscreenchange, false );
+
+                        element.requestFullscreen = element.requestFullscreen || element.mozRequestFullscreen || element.mozRequestFullScreen || element.webkitRequestFullscreen;
+
+                        element.requestFullscreen();
+
+                    } else {
+
+                        element.requestPointerLock();
+
+                    }
+
+                }, false );
+
+            } else {
+
+                instructions.innerHTML = 'Your browser doesn\'t seem to support Pointer Lock API';
+
+            }
+
+            initCannon();
+            init();
+            animate();
+
+            function initCannon(){
+                // Setup our world
+                world = new CANNON.World();
+                world.quatNormalizeSkip = 0;
+                world.quatNormalizeFast = false;
+
+                var solver = new CANNON.GSSolver();
+
+                world.defaultContactMaterial.contactEquationStiffness = 1e9;
+                world.defaultContactMaterial.contactEquationRegularizationTime = 4;
+
+                solver.iterations = 7;
+                solver.tolerance = 0.1;
+                var split = true;
+                if(split)
+                    world.solver = new CANNON.SplitSolver(solver);
+                else
+                    world.solver = solver;
+
+                world.gravity.set(0,-25,0);
+                world.broadphase = new CANNON.NaiveBroadphase();
+
+                // Create a slippery material (friction coefficient = 0.0)
+                physicsMaterial = new CANNON.Material("slipperyMaterial");
+                var physicsContactMaterial = new CANNON.ContactMaterial(physicsMaterial,
+                                                                        physicsMaterial,
+                                                                        0.0, // friction coefficient
+                                                                        0.1  // restitution
+                                                                        );
+                // We must add the contact materials to the world
+                world.addContactMaterial(physicsContactMaterial);
+
+                // Create a sphere for the bounding box of the camera
+                var mass = 5, radius = 1;
+                sphereShape = new CANNON.Sphere(radius);
+                sphereBody = new CANNON.RigidBody(mass,sphereShape,physicsMaterial);
+                sphereBody.position.set(0,1,0);
+                sphereBody.linearDamping = 0.9;
+                world.add(sphereBody);
+
+                // Create a plane for the floor
+                var groundShape = new CANNON.Plane();
+                var groundBody = new CANNON.RigidBody(0,groundShape,physicsMaterial);
+                groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1,0,0),-Math.PI/2);
+                world.add(groundBody);
+            }
+
+            function init() {
+
+                camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+                scene = new THREE.Scene();
+                scene.fog = new THREE.Fog( 0x000000, 0, 500 );
+
+                var ambient = new THREE.AmbientLight( 0x111111 );
+                scene.add( ambient );
+
+                light = new THREE.SpotLight( 0xffffff );
+                light.position.set( 10, 30, 20 );
+                light.target.position.set( 0, 0, 0 );
+                light.castShadow = true;
+                light.shadowCameraNear = 20;
+                light.shadowCameraFar = 50; //camera.far;
+                light.shadowCameraFov = 40;
+                light.shadowMapBias = 0.1;
+                light.shadowMapDarkness = 0.7;
+                light.shadowMapWidth = 2*512;
+                light.shadowMapHeight = 2*512;
+                //light.shadowCameraVisible = true; //light bounding box
+                scene.add( light );
+
+				// controls
+                controls = new PointerLockControls( camera, sphereBody );
+                scene.add( controls.getObject() );
+
+                // floor
+                geometry = new THREE.PlaneGeometry( 300, 300, 50, 50 );
+                geometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
+
+                material = new THREE.MeshLambertMaterial( { color: 0xdddddd } );
+                THREE.ColorUtils.adjustHSV( material.color, 0, 0, 0.9 );
+
+                mesh = new THREE.Mesh( geometry, material );
+                mesh.castShadow = true;
+                mesh.receiveShadow = true;
+                scene.add( mesh );
+
+				// renderer
+                renderer = new THREE.WebGLRenderer();
+                renderer.shadowMapEnabled = true;
+                renderer.shadowMapSoft = true;
+                renderer.setSize( window.innerWidth, window.innerHeight );
+                renderer.setClearColor( scene.fog.color, 1 );
+
+                document.body.appendChild( renderer.domElement );
+
+                window.addEventListener( 'resize', onWindowResize, false );
+
+                // box with collision
+                var halfExtents = new CANNON.Vec3(1,1,1);
+                var boxShape = new CANNON.Box(halfExtents);
+                var boxGeometry = new THREE.CubeGeometry(halfExtents.x*2,halfExtents.y*2,halfExtents.z*2);
+                boxBody = new CANNON.RigidBody(0,boxShape);
+                boxMesh = new THREE.Mesh( boxGeometry, material );
+                world.add(boxBody);
+                scene.add(boxMesh);
+                boxBody.position.set(-10,1,-10);
+                boxMesh.position.set(-10,1,-10);
+                boxMesh.castShadow = true;
+                boxMesh.receiveShadow = true;
+				
+				// model
+				var loader = new THREE.JSONLoader();
+				var callback = function ( geometry, materials ) {
+					mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+					mesh.doubleSided = true; // Not working
+					mesh.castShadow = true;
+					mesh.receiveShadow = true;
+					mesh.scale.set( 0.1, 0.1, 0.1 );
+					scene.add( mesh );
+				};
+				loader.load( "models/ResHall.js", callback );
+            }
+
+            function onWindowResize() {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize( window.innerWidth, window.innerHeight );
+            }
+
+            var timeStep = 1/60;
+            function animate() {
+                requestAnimationFrame( animate );
+                if(controls.enabled){
+                    world.step(timeStep);   
+                }
+
+                controls.update( Date.now() - time );
+                renderer.render( scene, camera );
+                time = Date.now();
+
+            }
+
+        </script>
+    </body>
+</html>

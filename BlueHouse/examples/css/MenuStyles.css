@@ -1,0 +1,75 @@
+
+	#tab{
+	 position: absolute; 
+       top:-1%; 
+       left: 0; 
+       width: 100%; 
+	   margin: 0;
+	   padding:0;	
+	}
+	#tab img{
+		width:90%;
+		heigth:90%;
+		z-index:0;
+	}	
+	#banner img{
+		width: 100%;
+		background-repeat: repeat-x:
+	}
+	#utdLogo{
+		left:1%;
+		top:8%;
+		width: 600px;
+		height: 264px;
+		z-index:1;
+		position: absolute;
+	}
+	#utdLogo img{
+		width:30%;
+		height:25%;
+		z-index:1;
+	}
+	#credits img{
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+	#credits{
+		left: 61%;
+		top: 6%;
+		width:320px;
+		height:112px;
+		position:absolute;
+		z-index:1;
+		margin: 0 auto;
+	}
+	#welcome img{
+		top:0;
+		left:0;
+		width:80%;
+		height:80%;
+	}
+	#welcome{
+		left: -.2%;
+		top:5%;
+		position: absolute;
+		z-index:9;
+	}
+#start {
+	top: 93%;
+		left: 36.2%;
+		position: absolute;
+		z-index:3;
+	
+ 
+  width:250 px;
+  height:136 px;
+  
+}
+
+.button1:hover {
+  background-image:url(../icons/startTour2.png);
+}
+	
+	

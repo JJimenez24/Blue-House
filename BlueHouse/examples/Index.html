@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ResHall Menu</title>
+
+ <link rel="stylesheet" href="css/MenuStyles.css" type="text/css" media="screen" charset="utf-8" />  
+ <link rel="stylesheet" href="css/orbit-1.2.3.css">
+ <link rel="stylesheet" href="css/demo-style.css">
+ 
+ <script src="js/jquery_v1.9.1.js" type="text/javascript"></script> 
+ <script src="js/jquery.orbit-1.2.3.js" type="text/javascript"></script>
+  
+ <script type="text/javascript">
+		$(document).ready(function() {
+				$('#featured').orbit();
+				
+				
+				
+ $("#start").mousedown(function(){
+        var shiftDown = parseInt($(this).css("margin-top"));
+        shiftDown=shiftDown+3;
+        $(this).css("margin-top",shiftDown+"px");
+ }).mouseup(function(){
+        var shiftDown = parseInt($(this).css("margin-top"));
+        shiftDown=shiftDown-3;
+        $(this).css("margin-top",shiftDown+"px");
+ }); 
+
+			});
+ 	 </script>
+
+</head>
+<body>
+
+
+
+	<div class="container">
+		<div id="featured"> 
+			<img src="slide-images/poolTable.jpg" />
+			<img src="slide-images/couches.jpg" />
+			<img src="slide-images/dormLiving.jpg" />
+            <img src="slide-images/resHall.jpg" />
+            <img src="slide-images/dormRoom.jpg" />
+            <img src="slide-images/lobby.jpg" />
+            <img src="slide-images/frontDesk.jpg" />
+		</div>
+		<div class="button1">
+				<div id = "start">
+        			<a href="reshall_test_walkcontrols.html">
+						<img src="icons/startTour.png"	
+  						width="250" height="136" style="float:right" border="0" />
+					</a> 
+    			</div>
+      		</div>    
+		<div id="welcome">
+			<img src="icons/welcome.svg"	
+  			width="539" height="53"  style: "float:left" border="0" />   
+		</div> 	  
+	</div>	
+	<div id="tab">
+    	<div id="banner">
+    		<img src="icons/banner.svg" />  
+        </div> 
+    	<div id = "utdLogo">
+    		<a href="http://www.utd.edu/">
+				<img src="icons/utdLogo.svg"	
+  				width="600px" height="264px"  style: "float:left" border="0" />
+			</a> 
+   		</div>
+        <div id="credits">
+        	
+        </div>
+    </div> 
+</body>
+</html>
